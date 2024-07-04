@@ -1,0 +1,77 @@
+# Google Cloud SDK
+google-cloud-sdk/
+.config/gcloud/
+.gsutil/
+
+# Google Cloud Platform
+*.json
+!package.json
+.gcloud/
+*.tar.gz
+
+# Kubernetes
+*.kubeconfig
+.kube/
+*.yaml
+!k8s/*.yaml
+
+# Terraform (often used with GCP and K8s)
+.terraform/
+*.tfstate
+*.tfstate.backup
+*.tfvars
+
+# Common environment files
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+logs/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDEs and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Build outputs
+/build
+/dist
+
+# Dependency directories
+/node_modules
+/vendor
+
+# Temporary files
+/tmp
+/temp
+
+# Docker
+.docker/
+docker-compose.override.yml
+
+# Python (if using Python with GCP)
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+
+# Ignore all .crt and .key files (certificates and keys)
+*.crt
+*.key
+
+# But don't ignore example certificates in docs
+!docs/*.crt
+!docs/*.key
+
+# Google Cloud SDK specific files
+.boto
+.dockercfg
+*.db-journal
