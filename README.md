@@ -18,7 +18,7 @@ This project demonstrates how to use Google Container Registry (GCR) with Kubern
 I will use Artifact Registry in this lab.
 ```
 
-## Setup GCP
+### Setup GCP
 
 Install Google Cloud SDK
 
@@ -28,31 +28,31 @@ When you type below command to login in from VM,you will get browser url.
 Access it and get key and then paste those key on login process.
 Done!
 
-## To download the Linux archive file, run the following command:
+### To download the Linux archive file, run the following command:
 
 ```bash
 curl -O https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-cli-linux-x86_64.tar.gz
 ```
 
-## To extract the contents of the file to your file system (preferably to your home directory), run the following command:
+###  To extract the contents of the file to your file system (preferably to your home directory), run the following command:
 
 ```bash
 tar -xf google-cloud-cli-linux-x86_64.tar.gz
 ```
 
-## Add the gcloud CLI to your path. Run the installation script from the root of the folder you extracted to using the following command:
+### Add the gcloud CLI to your path. Run the installation script from the root of the folder you extracted to using the following command:
 
 ```
 ./google-cloud-sdk/install.sh
 ```
 
-## To view the available flags, run:
+### To view the available flags, run:
 
 ```
 ./google-cloud-sdk/install.sh --help
 ```
 
-## To initialize the gcloud CLI, run gcloud init:
+### To initialize the gcloud CLI, run gcloud init:
 
 ```bash
 ./google-cloud-sdk/bin/gcloud init
@@ -88,7 +88,7 @@ gcloud projects list
 gcloud --version
 ```
 
-## Create Google Cloud Artifact Registry (GCAR)  By Command
+### Create Google Cloud Artifact Registry (GCAR)  By Command
 
 ```bash
 vagrant@cloud-native-box:~/gcr-with-kubernetes$ gcloud projects list
@@ -97,7 +97,7 @@ micro-store-426307-u5  My First Project  712406925782
 vagrant@cloud-native-box:~/gcr-with-kubernetes$ 
 ```
 
-## If you have multiple project, you can set target project
+### If you have multiple project, you can set target project
 
 ```
 gcloud config set project $PROJECT_ID
